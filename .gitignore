@@ -1,0 +1,44 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+vendor/
+
+# ── Build outputs ─────────────────────────────────────────────────────────────
+dist/
+build/
+frontend/dist/
+frontend/build/
+
+# ── Go binaries ───────────────────────────────────────────────────────────────
+backend/backend
+agent/agent
+*.exe
+
+# ── Environment & secrets ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── Docker volumes ────────────────────────────────────────────────────────────
+postgres_data/
+
+# ── Vite / Tailwind cache ─────────────────────────────────────────────────────
+frontend/node_modules/.vite/
+frontend/.vite/
+
+# ── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Test coverage ─────────────────────────────────────────────────────────────
+coverage/
+*.out
